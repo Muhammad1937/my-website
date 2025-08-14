@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CLICK CHALLENGE - 15 SECONDS</title>
     
     <!-- Firebase SDK -->
@@ -63,19 +63,19 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 20px;
+            padding: 10px;
             overflow-y: auto;
             position: relative;
             transition: background 0.3s ease;
         }
 
-        /* Sound Toggle Button */
+        /* Sound Toggle Button - Smaller */
         .sound-toggle {
             position: fixed;
-            top: 120px;
-            left: 20px;
-            width: 60px;
-            height: 60px;
+            top: 80px;
+            left: 10px;
+            width: 40px;
+            height: 40px;
             background: var(--bg-secondary);
             border-radius: 50%;
             border: 1px solid var(--border-color);
@@ -85,17 +85,17 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
 
         .sound-toggle:hover {
             transform: translateY(-2px) scale(1.1);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             border-color: var(--gradient-1);
         }
 
         .sound-icon {
-            font-size: 24px;
+            font-size: 18px;
             color: var(--gradient-1);
             transition: all 0.3s ease;
         }
@@ -105,16 +105,16 @@
             opacity: 0.5;
         }
 
-        /* Volume Control */
+        /* Volume Control - Smaller */
         .volume-control {
             position: fixed;
-            top: 190px;
-            left: 20px;
-            width: 60px;
+            top: 130px;
+            left: 10px;
+            width: 40px;
             background: var(--bg-secondary);
-            border-radius: 15px;
+            border-radius: 10px;
             border: 1px solid var(--border-color);
-            padding: 10px;
+            padding: 8px;
             z-index: 100;
             display: none;
             transition: all 0.3s ease;
@@ -139,7 +139,7 @@
         .volume-slider {
             -webkit-appearance: none;
             width: 100%;
-            height: 5px;
+            height: 4px;
             border-radius: 5px;
             background: var(--border-color);
             outline: none;
@@ -149,48 +149,48 @@
         .volume-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 15px;
-            height: 15px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
             background: var(--gradient-1);
             cursor: pointer;
         }
 
         .volume-slider::-moz-range-thumb {
-            width: 15px;
-            height: 15px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
             background: var(--gradient-1);
             cursor: pointer;
         }
 
-        /* Theme Toggle Button */
+        /* Theme Toggle Button - Smaller */
         .theme-toggle {
             position: fixed;
-            top: 70px;
-            left: 20px;
-            width: 60px;
-            height: 30px;
+            top: 40px;
+            left: 10px;
+            width: 40px;
+            height: 20px;
             background: var(--bg-secondary);
-            border-radius: 30px;
+            border-radius: 20px;
             border: 1px solid var(--border-color);
             cursor: pointer;
             z-index: 100;
             display: flex;
             align-items: center;
-            padding: 3px;
+            padding: 2px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
 
         .theme-toggle:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .theme-toggle-slider {
-            width: 24px;
-            height: 24px;
+            width: 16px;
+            height: 16px;
             background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
             border-radius: 50%;
             transition: transform 0.3s ease;
@@ -201,11 +201,11 @@
         }
 
         .theme-toggle.active .theme-toggle-slider {
-            transform: translateX(30px);
+            transform: translateX(20px);
         }
 
         .theme-icon {
-            font-size: 14px;
+            font-size: 10px;
             color: white;
         }
 
@@ -226,13 +226,13 @@
         }
 
         .loader {
-            width: 60px;
-            height: 60px;
-            border: 5px solid var(--border-color);
-            border-top: 5px solid var(--gradient-1);
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--border-color);
+            border-top: 4px solid var(--gradient-1);
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         @keyframes spin {
@@ -242,8 +242,8 @@
 
         .loading-text {
             color: var(--gradient-1);
-            font-size: 18px;
-            letter-spacing: 2px;
+            font-size: 14px;
+            letter-spacing: 1px;
         }
 
         /* Connection Error Screen */
@@ -264,61 +264,61 @@
         }
 
         .error-icon {
-            font-size: 80px;
-            margin-bottom: 30px;
+            font-size: 50px;
+            margin-bottom: 20px;
         }
 
         .error-title {
-            font-size: 36px;
+            font-size: 24px;
             color: var(--gradient-1);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: 900;
         }
 
         .error-description {
-            font-size: 18px;
+            font-size: 14px;
             color: var(--text-secondary);
-            margin-bottom: 40px;
-            max-width: 500px;
+            margin-bottom: 30px;
+            max-width: 400px;
         }
 
         .retry-btn {
-            padding: 18px 40px;
+            padding: 12px 30px;
             background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
             color: white;
             border: none;
-            border-radius: 30px;
-            font-size: 18px;
+            border-radius: 25px;
+            font-size: 14px;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .retry-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
         }
 
-        /* Online Indicator */
+        /* Online Indicator - Smaller */
         .online-indicator {
             position: fixed;
-            top: 20px;
-            right: 20px;
+            top: 10px;
+            right: 10px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 6px;
             background: var(--bg-secondary);
-            padding: 10px 20px;
-            border-radius: 30px;
+            padding: 6px 12px;
+            border-radius: 20px;
             border: 1px solid var(--border-color);
             z-index: 100;
             transition: all 0.3s ease;
         }
 
         .online-dot {
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             background: #00ff00;
             border-radius: 50%;
             animation: pulse-dot 2s infinite;
@@ -335,22 +335,22 @@
 
         .online-text {
             color: var(--text-primary);
-            font-size: 14px;
-            letter-spacing: 1px;
+            font-size: 10px;
+            letter-spacing: 0.5px;
         }
 
-        /* Player Count */
+        /* Player Count - Smaller */
         .player-count {
             position: fixed;
-            top: 20px;
-            left: 20px;
+            top: 10px;
+            left: 10px;
             background: var(--bg-secondary);
-            padding: 10px 20px;
-            border-radius: 30px;
+            padding: 6px 12px;
+            border-radius: 20px;
             border: 1px solid var(--border-color);
             color: var(--gradient-3);
-            font-size: 14px;
-            letter-spacing: 1px;
+            font-size: 10px;
+            letter-spacing: 0.5px;
             z-index: 100;
             transition: all 0.3s ease;
         }
@@ -383,8 +383,8 @@
 
         .particle {
             position: absolute;
-            width: 4px;
-            height: 4px;
+            width: 3px;
+            height: 3px;
             background: var(--particle-color);
             border-radius: 50%;
             animation: float 15s infinite linear;
@@ -407,37 +407,37 @@
             }
         }
 
-        /* Glowing orbs background */
+        /* Glowing orbs background - Smaller */
         .orb {
             position: fixed;
             border-radius: 50%;
-            filter: blur(40px);
+            filter: blur(30px);
             opacity: var(--orb-opacity);
             animation: orbFloat 20s infinite ease-in-out;
             transition: opacity 0.3s ease;
         }
 
         .orb1 {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             background: var(--gradient-1);
-            top: -150px;
-            left: -150px;
+            top: -100px;
+            left: -100px;
             animation-delay: 0s;
         }
 
         .orb2 {
-            width: 400px;
-            height: 400px;
+            width: 250px;
+            height: 250px;
             background: var(--gradient-2);
-            bottom: -200px;
-            right: -200px;
+            bottom: -125px;
+            right: -125px;
             animation-delay: 5s;
         }
 
         .orb3 {
-            width: 250px;
-            height: 250px;
+            width: 150px;
+            height: 150px;
             background: var(--gradient-3);
             top: 50%;
             left: 50%;
@@ -449,24 +449,24 @@
                 transform: translate(0, 0) scale(1);
             }
             33% {
-                transform: translate(100px, -100px) scale(1.1);
+                transform: translate(50px, -50px) scale(1.1);
             }
             66% {
-                transform: translate(-100px, 100px) scale(0.9);
+                transform: translate(-50px, 50px) scale(0.9);
             }
         }
 
-        /* Login Container */
+        /* Login Container - Smaller */
         .login-container {
             background: var(--bg-secondary);
             backdrop-filter: blur(20px);
-            padding: 50px;
-            border-radius: 30px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2),
-                        inset 0 0 20px rgba(102, 126, 234, 0.1);
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2),
+                        inset 0 0 15px rgba(102, 126, 234, 0.1);
             text-align: center;
-            max-width: 450px;
-            width: 90%;
+            max-width: 340px;
+            width: 95%;
             border: 1px solid var(--border-color);
             animation: slideInUp 0.8s ease-out;
             margin: auto;
@@ -477,7 +477,7 @@
         @keyframes slideInUp {
             from {
                 opacity: 0;
-                transform: translateY(50px);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -489,39 +489,39 @@
             background: linear-gradient(135deg, var(--gradient-1), var(--gradient-3));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 40px;
-            font-size: 32px;
+            margin-bottom: 25px;
+            font-size: 22px;
             font-weight: 900;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             animation: glow 2s ease-in-out infinite alternate;
         }
 
         @keyframes glow {
             from {
-                text-shadow: 0 0 10px var(--gradient-1), 0 0 20px var(--gradient-1);
+                text-shadow: 0 0 8px var(--gradient-1), 0 0 16px var(--gradient-1);
             }
             to {
-                text-shadow: 0 0 20px var(--gradient-3), 0 0 30px var(--gradient-3);
+                text-shadow: 0 0 16px var(--gradient-3), 0 0 24px var(--gradient-3);
             }
         }
 
         .input-group {
-            margin-bottom: 25px;
+            margin-bottom: 18px;
             position: relative;
         }
 
         .input-group input,
         .input-group select {
             width: 100%;
-            padding: 18px;
+            padding: 12px;
             border: 2px solid var(--border-color);
-            border-radius: 15px;
-            font-size: 16px;
+            border-radius: 10px;
+            font-size: 13px;
             background: var(--input-bg);
             color: var(--text-primary);
             transition: all 0.3s ease;
-            letter-spacing: 1px;
-            max-height: 300px;
+            letter-spacing: 0.5px;
+            max-height: 200px;
             overflow-y: auto;
         }
 
@@ -534,22 +534,22 @@
             outline: none;
             border-color: var(--gradient-1);
             background: var(--input-bg);
-            box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.2);
         }
 
         .submit-btn {
             width: 100%;
-            padding: 18px;
+            padding: 12px;
             background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
             color: white;
             border: none;
-            border-radius: 15px;
-            font-size: 20px;
+            border-radius: 10px;
+            font-size: 16px;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-top: 15px;
-            letter-spacing: 2px;
+            margin-top: 10px;
+            letter-spacing: 1px;
             position: relative;
             overflow: hidden;
         }
@@ -570,20 +570,20 @@
         }
 
         .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
         }
 
-        /* Main Container */
+        /* Main Container - Smaller */
         .main-container {
             display: none;
             text-align: center;
             color: var(--text-primary);
             width: 100%;
-            max-width: 700px;
-            padding: 20px;
+            max-width: 500px;
+            padding: 15px;
             animation: fadeIn 0.8s ease-out;
-            margin: 120px auto 20px;
+            margin: 80px auto 20px;
         }
 
         @keyframes fadeIn {
@@ -596,13 +596,13 @@
         }
 
         .title {
-            font-size: 36px;
+            font-size: 24px;
             font-weight: 900;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             background: linear-gradient(135deg, var(--text-primary), var(--gradient-1));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             animation: float-text 3s ease-in-out infinite;
         }
 
@@ -611,21 +611,21 @@
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-10px);
+                transform: translateY(-5px);
             }
         }
 
         .click-button {
-            width: 220px;
-            height: 220px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             background: linear-gradient(145deg, #1a1a3e, #16162c);
             border: 3px solid var(--border-color);
             cursor: pointer;
             position: relative;
-            margin: 0 auto 50px;
-            box-shadow: 0 0 50px rgba(102, 126, 234, 0.5),
-                        inset 0 0 50px rgba(102, 126, 234, 0.1);
+            margin: 0 auto 30px;
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.5),
+                        inset 0 0 30px rgba(102, 126, 234, 0.1);
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
@@ -635,22 +635,22 @@
 
         body.light-mode .click-button {
             background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
-            box-shadow: 0 0 50px rgba(102, 126, 234, 0.3),
-                        inset 0 0 50px rgba(102, 126, 234, 0.05);
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.3),
+                        inset 0 0 30px rgba(102, 126, 234, 0.05);
         }
 
         @keyframes pulse-button {
             0% {
-                box-shadow: 0 0 50px rgba(102, 126, 234, 0.5),
-                           inset 0 0 50px rgba(102, 126, 234, 0.1);
+                box-shadow: 0 0 30px rgba(102, 126, 234, 0.5),
+                           inset 0 0 30px rgba(102, 126, 234, 0.1);
             }
             50% {
-                box-shadow: 0 0 80px rgba(102, 126, 234, 0.8),
-                           inset 0 0 50px rgba(102, 126, 234, 0.2);
+                box-shadow: 0 0 50px rgba(102, 126, 234, 0.8),
+                           inset 0 0 30px rgba(102, 126, 234, 0.2);
             }
             100% {
-                box-shadow: 0 0 50px rgba(102, 126, 234, 0.5),
-                           inset 0 0 50px rgba(102, 126, 234, 0.1);
+                box-shadow: 0 0 30px rgba(102, 126, 234, 0.5),
+                           inset 0 0 30px rgba(102, 126, 234, 0.1);
             }
         }
 
@@ -666,11 +666,11 @@
         .play-icon {
             width: 0;
             height: 0;
-            border-left: 45px solid var(--gradient-1);
-            border-top: 30px solid transparent;
-            border-bottom: 30px solid transparent;
-            margin-left: 10px;
-            filter: drop-shadow(0 0 10px var(--gradient-1));
+            border-left: 30px solid var(--gradient-1);
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            margin-left: 8px;
+            filter: drop-shadow(0 0 8px var(--gradient-1));
         }
 
         /* Game Screen - Fixed positioning */
@@ -688,6 +688,7 @@
             flex-direction: column;
             cursor: pointer;
             user-select: none;
+            touch-action: none;
         }
 
         .game-content {
@@ -704,16 +705,16 @@
         }
 
         .counter {
-            font-size: 120px;
+            font-size: 80px;
             font-weight: 900;
-            margin: 20px 0;
+            margin: 15px 0;
             background: linear-gradient(135deg, var(--gradient-1), var(--gradient-3));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            letter-spacing: 5px;
+            letter-spacing: 3px;
             user-select: none;
             transition: transform 0.1s ease;
-            width: 300px;
+            width: 200px;
             text-align: center;
             position: relative;
         }
@@ -731,19 +732,19 @@
         }
 
         .timer {
-            font-size: 32px;
+            font-size: 24px;
             color: var(--gradient-3);
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             position: absolute;
-            top: -60px;
+            top: -45px;
             left: 50%;
             transform: translateX(-50%);
-            width: 200px;
+            width: 150px;
             text-align: center;
         }
 
         .countdown {
-            font-size: 150px;
+            font-size: 100px;
             font-weight: 900;
             background: linear-gradient(135deg, var(--gradient-1), var(--gradient-3));
             -webkit-background-clip: text;
@@ -768,9 +769,9 @@
         .leaderboard {
             background: var(--bg-card);
             backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 25px;
-            margin-top: 40px;
+            border-radius: 15px;
+            padding: 20px 15px;
+            margin-top: 25px;
             border: 1px solid var(--border-color);
             animation: slideIn 0.8s ease-out 0.3s both;
             transition: all 0.3s ease;
@@ -779,7 +780,7 @@
         @keyframes slideIn {
             from {
                 opacity: 0;
-                transform: translateX(-30px);
+                transform: translateX(-20px);
             }
             to {
                 opacity: 1;
@@ -788,26 +789,27 @@
         }
 
         .leaderboard-title {
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 18px;
+            margin-bottom: 15px;
             font-weight: 700;
             color: var(--gradient-3);
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         /* Dark mode - white text for ranks */
         .rank-item {
             background: var(--rank-bg);
-            margin: 12px 0;
-            padding: 15px 25px;
-            border-radius: 15px;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             transition: all 0.3s ease;
             border: 1px solid transparent;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             color: var(--rank-text-color) !important;
+            font-size: 12px;
         }
 
         .rank-item span {
@@ -831,10 +833,10 @@
 
         @keyframes goldGlow {
             0%, 100% {
-                box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+                box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
             }
             50% {
-                box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+                box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
             }
         }
 
@@ -849,23 +851,23 @@
         }
 
         .rank-item:hover {
-            transform: translateX(10px);
+            transform: translateX(5px);
             background: rgba(102, 126, 234, 0.1);
             border-color: var(--border-color);
         }
 
         .buttons-container {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 20px;
             animation: fadeInUp 0.8s ease-out 0.5s both;
         }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(15px);
             }
             to {
                 opacity: 1;
@@ -874,18 +876,19 @@
         }
 
         .view-all-btn, .my-rank-btn {
-            padding: 15px 30px;
+            padding: 10px 20px;
             background: rgba(102, 126, 234, 0.2);
             backdrop-filter: blur(10px);
             color: white;
             border: 2px solid var(--border-color);
-            border-radius: 30px;
+            border-radius: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             position: relative;
             overflow: hidden;
+            font-size: 12px;
         }
 
         .view-all-btn::before, .my-rank-btn::before {
@@ -902,28 +905,28 @@
         }
 
         .view-all-btn:hover::before, .my-rank-btn:hover::before {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
         }
 
         .view-all-btn:hover, .my-rank-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
             border-color: var(--gradient-1);
         }
 
-        /* Result Container */
+        /* Result Container - Smaller */
         .result-container {
             display: none;
             background: var(--bg-secondary);
             backdrop-filter: blur(20px);
-            padding: 50px;
-            border-radius: 30px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2),
-                        inset 0 0 20px rgba(102, 126, 234, 0.1);
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2),
+                        inset 0 0 15px rgba(102, 126, 234, 0.1);
             text-align: center;
-            max-width: 450px;
-            width: 90%;
+            max-width: 340px;
+            width: 95%;
             border: 1px solid var(--border-color);
             animation: bounceIn 0.8s ease-out;
             margin: auto;
@@ -951,20 +954,20 @@
             background: linear-gradient(135deg, var(--gradient-1), var(--gradient-3));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 30px;
-            font-size: 36px;
+            margin-bottom: 20px;
+            font-size: 24px;
             font-weight: 900;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
         }
 
         .result-rank {
-            font-size: 96px;
+            font-size: 60px;
             font-weight: 900;
             background: linear-gradient(135deg, var(--gradient-3), var(--gradient-1));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin: 30px 0;
-            letter-spacing: 5px;
+            margin: 20px 0;
+            letter-spacing: 3px;
             animation: rankPulse 1s ease-out infinite alternate;
         }
 
@@ -978,24 +981,24 @@
         }
 
         .result-clicks {
-            font-size: 20px;
+            font-size: 16px;
             color: var(--text-secondary);
-            margin-bottom: 20px;
-            letter-spacing: 1px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
         }
 
         .play-again-btn {
-            padding: 18px 40px;
+            padding: 12px 30px;
             background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
             color: white;
             border: none;
-            border-radius: 30px;
-            font-size: 18px;
+            border-radius: 20px;
+            font-size: 14px;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            letter-spacing: 2px;
-            margin-top: 20px;
+            letter-spacing: 1px;
+            margin-top: 15px;
             position: relative;
             overflow: hidden;
         }
@@ -1016,15 +1019,15 @@
         }
 
         .play-again-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
         }
 
         /* Click Effects */
         .click-effect {
             position: fixed;
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             background: radial-gradient(circle, rgba(102, 126, 234, 0.8) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
@@ -1034,7 +1037,7 @@
 
         @keyframes clickWave {
             to {
-                transform: scale(4);
+                transform: scale(3);
                 opacity: 0;
             }
         }
@@ -1054,19 +1057,20 @@
 
         .modal-content {
             background: var(--bg-secondary);
-            margin: 5% auto;
-            padding: 40px;
+            margin: 10% auto;
+            padding: 25px 15px;
             border: 1px solid var(--border-color);
-            border-radius: 20px;
-            width: 90%;
-            max-width: 600px;
-            max-height: 80vh;
+            border-radius: 15px;
+            width: 95%;
+            max-width: 450px;
+            max-height: 70vh;
             overflow-y: auto;
             animation: slideInUp 0.5s ease-out;
         }
 
         .modal-content h2 {
             color: var(--gradient-3);
+            font-size: 18px;
         }
 
         /* Modal rank items - same styling as main leaderboard */
@@ -1089,7 +1093,7 @@
         .close {
             color: var(--gradient-3);
             float: right;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
             cursor: pointer;
             transition: color 0.3s;
@@ -1099,7 +1103,7 @@
             color: var(--gradient-1);
         }
 
-        /* My Rank Modal - Updated */
+        /* My Rank Modal - Updated & Smaller */
         .my-rank-modal {
             display: none;
             position: fixed;
@@ -1116,17 +1120,17 @@
 
         .my-rank-content {
             background: var(--bg-secondary);
-            padding: 40px;
+            padding: 25px 20px;
             border: 1px solid var(--border-color);
-            border-radius: 30px;
+            border-radius: 20px;
             width: 90%;
-            max-width: 400px;
+            max-width: 320px;
             margin: auto;
             text-align: center;
             animation: zoomIn 0.3s ease-out;
             position: relative;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3),
-                        inset 0 0 30px rgba(102, 126, 234, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+                        inset 0 0 20px rgba(102, 126, 234, 0.1);
         }
 
         @keyframes zoomIn {
@@ -1141,23 +1145,23 @@
         }
 
         .my-rank-title {
-            font-size: 24px;
+            font-size: 18px;
             background: linear-gradient(135deg, var(--gradient-1), var(--gradient-3));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: 900;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .my-rank-number {
-            font-size: 80px;
+            font-size: 50px;
             font-weight: 900;
             background: linear-gradient(135deg, var(--gradient-3), var(--gradient-1));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin: 20px 0;
-            letter-spacing: 3px;
+            margin: 15px 0;
+            letter-spacing: 2px;
             animation: rankBounce 1s ease-out infinite alternate;
         }
 
@@ -1171,25 +1175,25 @@
         }
 
         .my-rank-details {
-            font-size: 16px;
+            font-size: 14px;
             color: var(--text-secondary);
-            margin: 15px 0;
-            letter-spacing: 1px;
+            margin: 10px 0;
+            letter-spacing: 0.5px;
         }
 
         .my-rank-stats {
             background: var(--rank-bg);
-            border-radius: 15px;
-            padding: 15px;
-            margin: 20px 0;
+            border-radius: 10px;
+            padding: 12px;
+            margin: 15px 0;
             border: 1px solid var(--border-color);
         }
 
         .stat-row {
             display: flex;
             justify-content: space-between;
-            margin: 8px 0;
-            font-size: 14px;
+            margin: 6px 0;
+            font-size: 12px;
         }
 
         .stat-label {
@@ -1202,50 +1206,50 @@
         }
 
         .close-rank-btn {
-            padding: 12px 30px;
+            padding: 10px 25px;
             background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
             color: white;
             border: none;
-            border-radius: 30px;
-            font-size: 16px;
+            border-radius: 20px;
+            font-size: 14px;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            letter-spacing: 2px;
-            margin-top: 15px;
+            letter-spacing: 1px;
+            margin-top: 10px;
         }
 
         .close-rank-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
         }
 
         .rank-medal {
-            font-size: 60px;
-            margin: 15px 0;
+            font-size: 40px;
+            margin: 10px 0;
         }
 
         /* Empty State */
         .empty-state {
             text-align: center;
-            padding: 40px;
+            padding: 30px;
             color: var(--text-secondary);
         }
 
         .empty-state-icon {
-            font-size: 60px;
-            margin-bottom: 20px;
+            font-size: 40px;
+            margin-bottom: 15px;
             opacity: 0.5;
         }
 
         .empty-state-text {
-            font-size: 18px;
-            letter-spacing: 1px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
         }
 
         /* Scrollbar Styling */
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
         }
 
         ::-webkit-scrollbar-track {
@@ -1254,7 +1258,7 @@
 
         ::-webkit-scrollbar-thumb {
             background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
-            border-radius: 5px;
+            border-radius: 4px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
@@ -1274,45 +1278,70 @@
         /* Error message */
         .error-message {
             color: #ff6b6b;
-            font-size: 14px;
-            margin-top: 10px;
+            font-size: 12px;
+            margin-top: 8px;
             display: none;
         }
 
-        /* New Player Badge */
+        /* New Player Badge - Smaller */
         .new-player-btn {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 12px 25px;
+            bottom: 15px;
+            right: 15px;
+            padding: 8px 18px;
             background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
             color: white;
             border: none;
-            border-radius: 30px;
-            font-size: 14px;
+            border-radius: 20px;
+            font-size: 11px;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             z-index: 100;
             display: none;
         }
 
         .new-player-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
         }
 
         /* Loading state for rank modal */
         .rank-loading {
             display: inline-block;
-            width: 40px;
-            height: 40px;
-            border: 4px solid var(--border-color);
-            border-top: 4px solid var(--gradient-1);
+            width: 30px;
+            height: 30px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--gradient-1);
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin: 20px 0;
+            margin: 15px 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 360px) {
+            .title {
+                font-size: 20px;
+            }
+            
+            .click-button {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .counter {
+                font-size: 70px;
+            }
+            
+            .countdown {
+                font-size: 80px;
+            }
+            
+            .login-container,
+            .result-container {
+                padding: 25px 15px;
+            }
         }
     </style>
 </head>
@@ -1373,7 +1402,7 @@
     <div class="orb orb3"></div>
 
     <!-- Game Screen (Full Screen) -->
-    <div class="game-screen" id="gameScreen" onclick="handleGameClick(event)">
+    <div class="game-screen" id="gameScreen">
         <div class="game-content">
             <div class="timer" id="timer" style="display: none;">15.0S</div>
             <div class="countdown" id="countdown"></div>
@@ -1434,7 +1463,7 @@
     <div id="allRanksModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2 style="margin-bottom: 20px;">WORLDWIDE LEADERBOARD</h2>
+            <h2 style="margin-bottom: 15px;">WORLDWIDE LEADERBOARD</h2>
             <div id="allRanksList"></div>
         </div>
     </div>
@@ -1487,6 +1516,7 @@
         let isDarkMode = true;
         let isSoundEnabled = true;
         let currentVolume = 0.5;
+        let activeTouches = new Set();
 
         // Audio context for creating sounds
         let audioContext = null;
@@ -1905,7 +1935,7 @@
         // Create Animated Particles
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < 30; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
                 particle.style.left = Math.random() * 100 + '%';
@@ -2142,20 +2172,62 @@
             }
         }
 
-        // Handle Click during game
-        function handleGameClick(event) {
-            if (gameStarted && timeLeft > 0) {
-                clickCount++;
-                const counter = document.getElementById('clickCounter');
-                counter.textContent = clickCount;
-                counter.style.animation = 'none';
-                setTimeout(() => {
-                    counter.style.animation = 'counter-pulse 0.3s ease-out';
-                }, 10);
-                
-                createClickEffect(event);
-                playClickSound();
-            }
+        // Setup game screen for multi-touch
+        function setupGameScreen() {
+            const gameScreen = document.getElementById('gameScreen');
+            
+            // Mouse events
+            gameScreen.addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                if (gameStarted && timeLeft > 0) {
+                    registerClick(e);
+                }
+            });
+            
+            // Touch events for multi-touch support
+            gameScreen.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                if (gameStarted && timeLeft > 0) {
+                    // Process all touches
+                    for (let i = 0; i < e.changedTouches.length; i++) {
+                        const touch = e.changedTouches[i];
+                        if (!activeTouches.has(touch.identifier)) {
+                            activeTouches.add(touch.identifier);
+                            registerClick(touch);
+                        }
+                    }
+                }
+            });
+            
+            gameScreen.addEventListener('touchend', (e) => {
+                e.preventDefault();
+                // Remove ended touches
+                for (let i = 0; i < e.changedTouches.length; i++) {
+                    activeTouches.delete(e.changedTouches[i].identifier);
+                }
+            });
+            
+            gameScreen.addEventListener('touchcancel', (e) => {
+                e.preventDefault();
+                // Remove cancelled touches
+                for (let i = 0; i < e.changedTouches.length; i++) {
+                    activeTouches.delete(e.changedTouches[i].identifier);
+                }
+            });
+        }
+
+        // Register a click
+        function registerClick(event) {
+            clickCount++;
+            const counter = document.getElementById('clickCounter');
+            counter.textContent = clickCount;
+            counter.style.animation = 'none';
+            setTimeout(() => {
+                counter.style.animation = 'counter-pulse 0.3s ease-out';
+            }, 10);
+            
+            createClickEffect(event);
+            playClickSound();
         }
 
         // Create Click Effect
@@ -2163,8 +2235,11 @@
             const effect = document.createElement('div');
             effect.className = 'click-effect';
             
-            effect.style.left = (e.clientX - 20) + 'px';
-            effect.style.top = (e.clientY - 20) + 'px';
+            const x = e.clientX || e.pageX;
+            const y = e.clientY || e.pageY;
+            
+            effect.style.left = (x - 15) + 'px';
+            effect.style.top = (y - 15) + 'px';
             
             document.body.appendChild(effect);
             setTimeout(() => effect.remove(), 600);
@@ -2173,6 +2248,7 @@
         // Start Countdown
         function startCountdown() {
             gameStarted = false;
+            activeTouches.clear();
             let countdown = 3;
             document.getElementById('countdown').style.display = 'block';
             document.getElementById('countdown').textContent = countdown;
@@ -2221,6 +2297,7 @@
         async function endGame() {
             clearInterval(gameInterval);
             gameStarted = false;
+            activeTouches.clear();
             
             playEndSound();
             
@@ -2263,6 +2340,7 @@
             clickCount = 0;
             timeLeft = 15;
             gameStarted = false;
+            activeTouches.clear();
             
             document.getElementById('resultScreen').style.display = 'none';
             document.getElementById('mainScreen').style.display = 'block';
@@ -2393,6 +2471,7 @@
             initAudio();
             createParticles();
             loadCountries();
+            setupGameScreen();
             
             // Volume slider event
             document.getElementById('volumeSlider').addEventListener('input', updateVolume);
